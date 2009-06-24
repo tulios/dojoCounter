@@ -21,7 +21,7 @@ public class PainelDefinirTempo extends JPanel{
 	private JTextField fieldTempo;
 	private Timer timer;
 	private JButton definir;
-
+	
 	private static int xContador;
 	private static int yContador;
 	
@@ -46,7 +46,7 @@ public class PainelDefinirTempo extends JPanel{
 				actionDefinir();
 			}
 		});
-
+		
 		GridBagConstraints cons = new GridBagConstraints();
 		cons.insets = new Insets(2,2,2,2);
 
@@ -57,11 +57,11 @@ public class PainelDefinirTempo extends JPanel{
 		this.add(labelTempo, cons);
 
 		cons.gridy = 0;
-		cons.gridx = 1;
+		cons.gridx = 2;
 		this.add(fieldTempo, cons);
 
 		cons.gridy = 0;
-		cons.gridx = 2;
+		cons.gridx = 4;
 		this.add(definir, cons);
 	}
 
@@ -87,10 +87,10 @@ public class PainelDefinirTempo extends JPanel{
 					Janela.getInstance().setVisible(false);
 					
 				}else{
-					JOptionPane.showMessageDialog(this, "Número positivo!","Erro",JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(this, "NÃºmero positivo!","Erro",JOptionPane.ERROR_MESSAGE);
 				}
 			}catch(NumberFormatException e){
-				JOptionPane.showMessageDialog(this, "Digite um número inteiro mané!!","Erro",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Digite um nÃºmero inteiro!","Erro",JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}
