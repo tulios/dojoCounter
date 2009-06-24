@@ -3,13 +3,13 @@
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
     <target name="create_run_jar">
-        <jar destfile="C:/Documents and Settings/Tulio/Meus documentos/Documentos/Projetos - releases/dojoCounter/dojoCounter.jar" filesetmanifest="mergewithoutmain">
+        <jar destfile="/home/tulios/Documentos/Projetos - releases/dojoCounter/dojoCounter-0.4.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Built-By" value="${user.name}"/>
                 <attribute name="Main-Class" value="br.dojo.counter.Main"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
-            <fileset dir="C:/Projetos/eclipse/workspace-2009/dojoCounter/bin"/>
+            <fileset dir="/home/tulios/Projetos/eclipse/workspace-2009/dojoCounter/bin"/>
         </jar>
     </target>
 </project>
