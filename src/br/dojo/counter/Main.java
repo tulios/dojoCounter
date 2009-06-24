@@ -1,5 +1,7 @@
 package br.dojo.counter;
 
+import javax.swing.UIManager;
+
 public class Main {
 	
 	private static int tempo;
@@ -16,6 +18,17 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		try {
+			String lookAndFeelSistema = UIManager.getSystemLookAndFeelClassName();
+			UIManager.setLookAndFeel(lookAndFeelSistema);
+		} catch (Exception e) {
+			String crossLookAndFeel = UIManager.getCrossPlatformLookAndFeelClassName();
+			try {
+				UIManager.setLookAndFeel(crossLookAndFeel);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+		}
 		new Janela();
 	}
 
