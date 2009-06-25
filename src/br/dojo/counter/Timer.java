@@ -80,6 +80,8 @@ public class Timer extends JDialog{
 				do{			
 					
 					try{
+						apresentacaoTempo.setText(" "+df.format(min)+":"+df.format(seg)+" ");
+						
 						Thread.sleep(1000);// 1s
 
 						seg++;
@@ -87,8 +89,6 @@ public class Timer extends JDialog{
 							seg = 0;
 							min++;
 						}
-						
-						apresentacaoTempo.setText(" "+df.format(min)+":"+df.format(seg)+" ");
 						
 						segundos = seg;
 						minutos = min;
@@ -107,6 +107,7 @@ public class Timer extends JDialog{
 	}
 
 	private void acabou(){
+		this.pauseButton.setVisible(false);
 		this.apresentacaoTempo.setText("Acabou!");
 		this.apresentacaoTempo.setForeground(Color.WHITE);
 		this.getContentPane().setBackground(Color.RED);

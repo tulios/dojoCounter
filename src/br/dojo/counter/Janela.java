@@ -11,7 +11,7 @@ public class Janela extends JFrame{
 	private static Janela instance;
 	
 	public Janela(){
-		super("dojo.counter v0.4");
+		super("dojo.counter v0.4.1");
 		instance = this;
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
